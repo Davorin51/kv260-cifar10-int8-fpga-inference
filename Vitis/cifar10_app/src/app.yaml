@@ -1,0 +1,4 @@
+domain_path: /home/davorin/Documents/KV260/Vitis/kv260_platform/export/kv260_platform/sw/standalone_psu_cortexa53_0
+app_src_dir: /home/davorin/2025.2/Vitis/data/embeddedsw/lib/sw_apps/empty_application
+template: empty_application
+lang: c

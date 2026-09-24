@@ -1,0 +1,3 @@
+relativeroot=/home/davorin/Documents/KV260/HLS/cifar10_cnn
+original_argv=--mode hls --package --config /home/davorin/Documents/KV260/HLS/cifar10_cnn/hls_config.cfg --work_dir cifar10_cnn 
+

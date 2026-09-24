@@ -1,0 +1,247 @@
+<ENTRY>
+{
+ "thisFile": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/cifar10_cnn.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep  8 17:39:28 2026",
+ "timestampMillis": "1788881968105",
+ "buildStep": {
+  "cmdId": "651fdbdf-5eb3-4978-bb94-156fa2a86a71",
+  "name": "v++",
+  "logFile": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/logs/cifar10_cnn.steps.log",
+  "commandLine": "/home/davorin/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/davorin/Documents/KV260/HLS/cifar10_cnn/hls_config.cfg --work_dir cifar10_cnn ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/davorin/Documents/KV260/HLS/cifar10_cnn/hls_config.cfg",
+   "--work_dir",
+   "cifar10_cnn"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/hls_config.cfg",
+    "content": "part=xck26-sfvc784-2LV-c\n\n[hls]\nflow_target=vivado\nclock=10ns\nsyn.top=cifar10_cnn\nsyn.cflags=-std=c++14\ntb.cflags=-std=c++14\nsyn.file=/home/davorin/Documents/KV260/HLS/cifar10_cnn/cnn.cpp\nsyn.file=/home/davorin/Documents/KV260/HLS/cifar10_cnn/cnn.h\nsyn.file=/home/davorin/Documents/KV260/HLS/cifar10_cnn/model_params.h\ntb.file=/home/davorin/Documents/KV260/HLS/cifar10_cnn/tb_cnn.cpp\ntb.file=/home/davorin/Documents/KV260/HLS/cifar10_cnn/test_vectors.h\npackage.output.format=ip_catalog\npackage.output.syn=false\n"
+   }
+  ],
+  "cwd": "/home/davorin/Documents/KV260/HLS/cifar10_cnn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  8 17:39:28 2026",
+ "timestampMillis": "1788881968105",
+ "status": {
+  "cmdId": "651fdbdf-5eb3-4978-bb94-156fa2a86a71",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cifar10_cnn",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cnn.cpp",
+     "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cnn.h",
+     "/home/davorin/Documents/KV260/HLS/cifar10_cnn/model_params.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "buildStep": {
+  "cmdId": "343756a2-f5a5-43d5-adf1-b5b928627aca",
+  "name": "",
+  "logFile": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/davorin/Documents/KV260/HLS/cifar10_cnn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "status": {
+  "cmdId": "343756a2-f5a5-43d5-adf1-b5b928627aca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:29 2026",
+ "timestampMillis": "1788881969251",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977555",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977556",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977556",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977556",
+ "status": {
+  "cmdId": "343756a2-f5a5-43d5-adf1-b5b928627aca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977602",
+ "status": {
+  "cmdId": "651fdbdf-5eb3-4978-bb94-156fa2a86a71",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977612",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/reports/v++_compile_cifar10_cnn_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  8 17:39:37 2026",
+ "timestampMillis": "1788881977613",
+ "report": {
+  "path": "/home/davorin/Documents/KV260/HLS/cifar10_cnn/cifar10_cnn/reports/.db/v++_compile_cifar10_cnn_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

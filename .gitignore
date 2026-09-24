@@ -1,0 +1,100 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Dataset / generated runs
+data/
+runs/
+
+# =========================
+# Logs / crash files
+# =========================
+*.log
+*.jou
+*.str
+hs_err_pid*.log
+
+# =========================
+# IDE / metadata
+# =========================
+.vscode/
+.idea/
+**/_ide/
+**/.rigel_lopper/
+**/.metadata/
+**/.Xil/
+**/compile_commands.json
+
+# =========================
+# HLS generated files
+# =========================
+HLS/**/solution*/
+HLS/**/.autopilot/
+HLS/**/sim/
+HLS/**/syn/
+HLS/**/*.zip
+HLS/**/CNN_Cifar_IP/
+HLS/**/component.xml
+
+# =========================
+# Vitis generated files
+# =========================
+Vitis/**/build/
+Vitis/**/Debug/
+Vitis/**/Release/
+
+# Generated hardware/platform
+Vitis/**/hw/
+Vitis/**/export/
+Vitis/**/zynqmp_fsbl/
+Vitis/**/*_bsp/
+
+# Binary outputs
+Vitis/**/*.elf
+Vitis/**/*.bit
+Vitis/**/*.xsa
+Vitis/**/*.xpfm
+
+# =========================
+# Vivado generated files
+# =========================
+Vivado/**/*.xsa
+Vivado/**/*.xpr
+Vivado/**/*.runs/
+Vivado/**/*.cache/
+Vivado/**/*.gen/
+Vivado/**/*.hw/
+Vivado/**/*.ip_user_files/
+Vivado/**/*.sim/
+Vivado/**/.Xil/
+
+# =========================
+# Archives / binaries
+# =========================
+*.tar
+*.tar.gz
+*.zip
+*.bin
+*.elf
+*.bit
+*.xsa
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Vitis generated platform / BSP content
+Vitis/kv260_platform/psu_cortexa53_0/
+Vitis/kv260_platform/resources/
+Vitis/kv260_platform/hw/
+Vitis/kv260_platform/export/
+Vitis/kv260_platform/zynqmp_fsbl/
+
+# clangd cache
+**/.cache/
