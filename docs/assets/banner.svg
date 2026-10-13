@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="440" viewBox="0 0 1400 440" role="img" aria-labelledby="title desc">
+<title id="title">KV260 CIFAR-10 — from PyTorch to integer FPGA inference</title>
+<desc id="desc">A portfolio project connecting CNN training, power-of-two INT8 quantization, HLS and bare-metal hardware execution.</desc>
+<rect width="1400" height="440" rx="20" fill="#172832"/>
+<g stroke="#29424d" stroke-width="1" fill="none"><path d="M925 50H1350V390H925Z"/><path d="M925 130H1350M925 210H1350M925 290H1350M1005 50V390M1085 50V390M1165 50V390M1245 50V390"/></g>
+<rect x="1050" y="115" width="215" height="195" rx="8" fill="#243d47" stroke="#6d9095"/>
+<g stroke="#719099" stroke-width="4"><path d="M1070 95v20M1100 95v20M1130 95v20M1160 95v20M1190 95v20M1220 95v20M1250 95v20M1070 310v20M1100 310v20M1130 310v20M1160 310v20M1190 310v20M1220 310v20M1250 310v20M1030 135h20M1030 165h20M1030 195h20M1030 225h20M1030 255h20M1030 285h20M1265 135h20M1265 165h20M1265 195h20M1265 225h20M1265 255h20M1265 285h20"/></g>
+<g font-family="DejaVu Sans,Arial,sans-serif"><text x="66" y="75" fill="#e7a37f" font-size="17" letter-spacing="3">EMBEDDED AI / FPGA ENGINEERING</text><text x="62" y="158" fill="#f6fafb" font-size="56" font-weight="700">KV260 CIFAR-10</text><text x="65" y="223" fill="#f6fafb" font-size="40" font-weight="400">Integer inference. Real hardware.</text><text x="66" y="280" fill="#aec1c8" font-size="21">PyTorch → Power-of-two INT8 → HLS → KV260</text><text x="66" y="373" fill="#e7a37f" font-size="16" letter-spacing="1">C/C++ · AXI · VITIS HLS · VIVADO · BARE-METAL A53</text><text x="1092" y="180" fill="#afc6cc" font-size="16" letter-spacing="2">AMD KRIA</text><text x="1079" y="237" fill="#ffffff" font-size="38" font-weight="700">KV260</text><text x="1091" y="276" fill="#e7a37f" font-size="15" letter-spacing="2">INT8 CNN</text></g>
+</svg>

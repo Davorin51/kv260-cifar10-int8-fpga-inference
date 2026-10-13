@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "provenance": "Owner-reported historical results, also published in the owner's GitHub profile README. Not rerun by the report generator or CI.",
+  "source_url": "https://github.com/Davorin51/Davorin51/blob/main/README.md",
+  "recorded_on": "2026-10-13",
+  "accuracy": {
+    "fp32_pct": 74.5,
+    "int8_pct": 72.74,
+    "dataset": "CIFAR-10",
+    "split_note": "The existing HLS guide calls 72.74% validation accuracy. The original comparison.json, evaluated sample count and FP32 checkpoint are not committed; do not label these as a matched official-test-set experiment.",
+    "raw_run_artifacts_available": false
+  },
+  "hardware": {
+    "board": "AMD/Xilinx Kria KV260",
+    "reported_observed_latency_ms": 29.19,
+    "reported_rate_images_per_second": 34.3,
+    "timing_scope": "Start-register write to observed done, including MMIO and polling overhead. Excludes image acquisition and full application preprocessing.",
+    "throughput_note": "34.3 images/s is consistent with reciprocal observed latency, not a separately measured sustained end-to-end camera pipeline rate.",
+    "raw_uart_log_available": false,
+    "distribution_samples_available": false
+  },
+  "limitations": [
+    "No training curves or latency distribution can be reconstructed from the committed artifacts.",
+    "HLS synthesis estimates are separate from post-route whole-design utilization and board measurements.",
+    "Host checks validate integer-logit agreement; they do not execute RTL, program the FPGA or reproduce classification accuracy."
+  ]
+}
