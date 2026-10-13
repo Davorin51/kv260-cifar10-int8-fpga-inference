@@ -7,8 +7,9 @@ int main() {
     int32_t actual[10];
     int failures = 0;
     // Replay sample 0 after the other samples to detect stale internal buffers.
-    for (int trial = 0; trial < 1; ++trial) {
-        const int sample = 1;  // Druga testna slika
+    static_assert(NUM_TEST_SAMPLES > 0, "At least one golden sample is required");
+    for (int trial = 0; trial <= NUM_TEST_SAMPLES; ++trial) {
+        const int sample = trial == NUM_TEST_SAMPLES ? 0 : trial;
         for (int i = 0; i < 3072; ++i) image[i] = TEST_IMAGES[sample][i];
         for (int i = 0; i < 10; ++i) actual[i] = -123456789;
         cifar10_cnn(image, actual);
@@ -31,6 +32,6 @@ int main() {
         std::printf("FAIL: %d logit mismatches\n", failures);
         return 1;
     }
-    std::printf("PASS: all 10 INT32 logits match for sample 1.\n");
+    std::printf("PASS: all 10 INT32 logits match for every sample and replay.\n");
     return 0;
 }

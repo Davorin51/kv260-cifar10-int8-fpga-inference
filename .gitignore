@@ -98,3 +98,10 @@ Vitis/kv260_platform/zynqmp_fsbl/
 
 # clangd cache
 **/.cache/
+
+# Future HLS build products; existing tracked snapshots are historical evidence.
+HLS/**/hls/
+HLS/**/*.hlscompile_summary
+HLS/**/*.hlsrun_*_summary
+cnn_check
+work/

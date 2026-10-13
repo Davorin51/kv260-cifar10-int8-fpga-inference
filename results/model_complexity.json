@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "architecture": "SmallCifarCNN_v1",
+  "layers": [
+    {
+      "layer": "Conv 1",
+      "weight_count": 432,
+      "bias_count": 16,
+      "dense_macs": 442368
+    },
+    {
+      "layer": "Conv 2",
+      "weight_count": 4608,
+      "bias_count": 32,
+      "dense_macs": 1179648
+    },
+    {
+      "layer": "Conv 3",
+      "weight_count": 18432,
+      "bias_count": 64,
+      "dense_macs": 1179648
+    },
+    {
+      "layer": "Classifier",
+      "weight_count": 640,
+      "bias_count": 10,
+      "dense_macs": 640
+    }
+  ],
+  "parameter_count": 24234,
+  "total_dense_macs": 2802304,
+  "fp32_parameter_bytes": 96936,
+  "int8_weight_int32_bias_bytes": 24600,
+  "counting_rule": "Dense convolution/linear products only; padded zero products included. Pooling, LUT, rounding, additions and AXI transfer excluded. Parameter bytes exclude input LUT and buffers; not measured FPGA storage or a file size."
+}

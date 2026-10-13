@@ -1,0 +1,30 @@
+name: Project checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements-reporting.txt
+      - run: python -m pip install -r requirements-reporting.txt
+      - name: Validate Python syntax
+        run: python -m py_compile train_cifar10_hls.py quantize_cifar10_hls.py HLS/cifar10_cnn/prepare_hls.py tools/generate_report.py tools/check_project.py
+      - name: Validate numerical reference and C++ parity
+        run: python tools/check_project.py
+      - name: Regenerate report figures
+        run: python tools/generate_report.py --output /tmp/kv260-report
